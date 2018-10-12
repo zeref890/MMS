@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.doreswamyhs.mms.ugcm">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:hint="@string/name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/srno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:text="@string/srno"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/serialno"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/srno"
+            android:layout_toEndOf="@+id/txt1"
+            android:layout_toRightOf="@+id/txt1"
+            android:hint="@string/esr"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="109dp"
+            android:text="@string/cable"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toEndOf="@+id/txt1"
+            android:layout_toRightOf="@+id/txt1"
+            android:inputType="number"
+            android:hint="@string/p5" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText12"
+            android:layout_alignStart="@+id/editText12"
+            android:layout_below="@+id/editText12"
+            android:inputType="number"
+            android:hint="@string/p10" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText13"
+            android:layout_alignStart="@+id/editText13"
+            android:layout_below="@+id/editText13"
+            android:inputType="number"
+            android:hint="@string/p20" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText14"
+            android:layout_alignStart="@+id/editText14"
+            android:layout_below="@+id/editText14"
+            android:inputType="number"
+            android:hint="@string/p50" />
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText15"
+            android:layout_alignStart="@+id/editText15"
+            android:layout_below="@+id/editText15"
+            android:inputType="number"
+            android:hint="@string/p100" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText16"
+            android:layout_alignStart="@+id/editText16"
+            android:layout_below="@+id/editText16"
+            android:inputType="number"
+            android:hint="@string/p200" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText12"
+            android:layout_toEndOf="@+id/editText13"
+            android:layout_toRightOf="@+id/editText13"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText13"
+            android:layout_toEndOf="@+id/editText13"
+            android:layout_toRightOf="@+id/editText13"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText14"
+            android:layout_toEndOf="@+id/editText13"
+            android:layout_toRightOf="@+id/editText13"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText15"
+            android:layout_toEndOf="@+id/editText13"
+            android:layout_toRightOf="@+id/editText13"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText16"
+            android:layout_toEndOf="@+id/editText16"
+            android:layout_toRightOf="@+id/editText16"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText17"
+            android:layout_toEndOf="@+id/editText16"
+            android:layout_toRightOf="@+id/editText16"
+            android:checked="false" />
+
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText16"
+            android:layout_alignStart="@+id/editText16"
+            android:layout_below="@+id/editText17"
+            android:inputType="number"
+            android:hint="@string/p400" />
+
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText16"
+            android:layout_alignStart="@+id/editText16"
+            android:layout_below="@+id/editText18"
+            android:inputType="number"
+            android:hint="@string/p800" />
+
+        <CheckBox
+            android:id="@+id/checkBox25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText18"
+            android:layout_toEndOf="@+id/editText16"
+            android:layout_toRightOf="@+id/editText16"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText19"
+            android:layout_toEndOf="@+id/editText16"
+            android:layout_toRightOf="@+id/editText16"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText19"
+            android:layout_marginTop="34dp"
+            android:text="@string/cons"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText20"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_toEndOf="@+id/txt1"
+            android:layout_toRightOf="@+id/txt1"
+            android:inputType="number"
+            android:hint="@string/dp1" />
+
+        <EditText
+            android:id="@+id/editText21"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText19"
+            android:layout_alignStart="@+id/editText19"
+            android:layout_below="@+id/editText20"
+            android:inputType="number"
+            android:hint="@string/dp05" />
+
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText19"
+            android:layout_alignStart="@+id/editText19"
+            android:layout_below="@+id/editText21"
+            android:inputType="number"
+            android:hint="@string/gc" />
+
+        <EditText
+            android:id="@+id/editText23"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText19"
+            android:layout_alignStart="@+id/editText19"
+            android:layout_below="@+id/editText22"
+            android:inputType="number"
+            android:hint="@string/rm" />
+
+        <EditText
+            android:id="@+id/editText24"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText19"
+            android:layout_alignStart="@+id/editText19"
+            android:layout_below="@+id/editText23"
+            android:inputType="number"
+            android:hint="@string/tu" />
+
+        <EditText
+            android:id="@+id/editText25"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText19"
+            android:layout_alignStart="@+id/editText19"
+            android:layout_below="@+id/editText24"
+            android:inputType="number"
+            android:hint="@string/uy" />
+
+        <CheckBox
+            android:id="@+id/checkBox27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText20"
+            android:layout_toEndOf="@+id/editText20"
+            android:layout_toRightOf="@+id/editText20"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText21"
+            android:layout_toEndOf="@+id/editText21"
+            android:layout_toRightOf="@+id/editText21"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText22"
+            android:layout_toEndOf="@+id/editText22"
+            android:layout_toRightOf="@+id/editText22"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText23"
+            android:layout_toEndOf="@+id/editText20"
+            android:layout_toRightOf="@+id/editText20"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox31"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_alignBottom="@+id/editText24"
+            android:layout_below="@+id/checkBox30"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/editText24"
+            android:layout_toRightOf="@+id/editText24"
+            android:checked="false" />
+
+        <CheckBox
+            android:id="@+id/checkBox32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText25"
+            android:layout_toEndOf="@+id/editText25"
+            android:layout_toRightOf="@+id/editText25"
+            android:checked="false" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editText25"
+            android:layout_marginTop="10dp"
+            android:text="@string/sub" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:hint="@string/tim"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </RelativeLayout>
+</ScrollView>

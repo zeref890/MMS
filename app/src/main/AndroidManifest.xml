@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doreswamyhs.mms">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".Initializer"
+        android:allowBackup="true"
+        android:icon="@drawable/img1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ugcm" />
+        <activity android:name=".Submission" />
+        <activity android:name=".AdminPage" />
+        <activity android:name=".NewUserAdmin" />
+        <activity android:name=".Project" />
+        <activity android:name=".AssignStocks" />
+        <activity android:name=".AssignUgcm" />
+        <activity android:name=".Login" />
+        <activity android:name=".AssignProject" />
+        <activity android:name=".CopperInstallation" />
+        <activity android:name=".FibreInstallation" />
+        <activity android:name=".AssignCI" />
+        <activity android:name=".AssignFI" />
+        <activity android:name=".display" />
+        <activity android:name=".display_stocks" />
+        <activity android:name=".reset_pass" />
+        <activity android:name=".display_p" />
+        <activity android:name=".display_c" />
+        <activity android:name=".display_ug" />
+        <activity android:name=".mid_screen" />
+        <activity android:name=".total_fibre" />
+        <activity android:name=".total_copper" />
+        <activity android:name=".total_project" />
+        <activity android:name=".total_ugcm" />
+        <activity android:name=".total_assign_fi" />
+        <activity android:name=".total_assign_ci" />
+        <activity android:name=".total_assign_p" />
+        <activity android:name=".total_assign_ug" />
+        <activity android:name=".mid" />
+        <activity android:name=".transfer" />
+        <activity android:name=".return_stocks"></activity>
+    </application>
+
+</manifest>
